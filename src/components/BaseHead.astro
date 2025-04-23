@@ -1,13 +1,17 @@
 ---
 interface Props {
-	title: string;
-	description: string;
+	title?: string;
+	description?: string;
 	image?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+const { 
+	title = "BrainMuffin | Hollywood Magic from the Other L.A.",
+	description = "We combine AI power with human creativity to deliver stunning visual effects fast and affordably.",
+	image = '/blog-placeholder-1.jpg' 
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->

@@ -36,8 +36,8 @@
 }
 
 @layer base {
-  body {
-    @apply bg-primary-yellow text-primary-white;
+  html, body { /* Apply to html as well */
+    @apply bg-neutral-950 text-primary-white;
   }
 
   .prose {
